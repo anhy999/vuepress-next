@@ -1,14 +1,13 @@
-import * as chalk from 'chalk'
-import * as debug from 'debug'
-import * as globby from 'globby'
-import * as ora from 'ora'
-export { debug, chalk, globby, ora }
+import chalk from 'chalk'
+import debug from 'debug'
+import fs from 'fs-extra'
+import { globby } from 'globby'
+import hash from 'hash-sum'
+import ora from 'ora'
+import path from 'upath'
 
-export * as fs from 'fs-extra'
-export * as path from 'upath'
+export { debug, chalk, fs, globby, hash, ora, path }
 
-export * from './hasExportDefault'
-export * from './hash'
 export * from './isChildPath'
 export * from './logger'
 export * from './renderHead'

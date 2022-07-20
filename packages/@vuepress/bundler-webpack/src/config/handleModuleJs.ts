@@ -1,6 +1,9 @@
+import { createRequire } from 'node:module'
 import type * as Config from 'webpack-chain'
 import type { WebpackBundlerOptions } from '../types'
 import { resolveEsbuildJsxOptions } from './resolveEsbuildJsxOptions'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Set webpack module to handle js files

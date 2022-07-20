@@ -45,5 +45,5 @@ export const handleModule = ({
   handleModuleTs({ app, config })
 
   // styles files
-  handleModuleStyles({ app, options, config, isBuild, isServer })
+  handleModuleStyles({ options, config, isBuild, isServer })
 }

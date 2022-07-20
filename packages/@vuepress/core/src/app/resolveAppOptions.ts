@@ -1,5 +1,8 @@
+import { createRequire } from 'node:module'
 import { path } from '@vuepress/utils'
 import type { AppConfig, AppOptions } from '../types'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Create app options with default values

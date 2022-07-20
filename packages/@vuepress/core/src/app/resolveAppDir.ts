@@ -1,5 +1,8 @@
+import { createRequire } from 'node:module'
 import { path } from '@vuepress/utils'
 import type { AppDir, AppDirFunction, AppOptions } from '../types'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Create directory util function

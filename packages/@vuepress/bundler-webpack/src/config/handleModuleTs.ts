@@ -1,6 +1,9 @@
+import { createRequire } from 'node:module'
 import type { App } from '@vuepress/core'
 import type * as Config from 'webpack-chain'
 import { resolveEsbuildJsxOptions } from './resolveEsbuildJsxOptions'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Set webpack module to handle ts files

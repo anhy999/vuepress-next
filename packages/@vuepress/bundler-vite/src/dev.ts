@@ -20,8 +20,12 @@ export const dev = async (
 
   const server = await createServer(viteConfig)
   await server.listen()
+
+  const viteVersion = (
+    await import('vite/package.json', { assert: { type: 'json' } })
+  ).version
   server.config.logger.info(
-    chalk.cyan(`\n  vite v${require('vite/package.json').version}`) +
+    chalk.cyan(`\n  vite v${viteVersion}`) +
       chalk.green(` dev server running at:\n`),
     {
       clear: !server.config.logger.hasWarned,

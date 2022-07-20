@@ -10,7 +10,10 @@ import type { LoaderContext } from '../../types.webpack'
  * to ensure that the module `request` in client and
  * server bundle are the same
  */
-export = function vuepressLoader(this: LoaderContext, source: string): string {
+export default function vuepressLoader(
+  this: LoaderContext,
+  source: string
+): string {
   // get `request` from loader context
   const { request } = this
 

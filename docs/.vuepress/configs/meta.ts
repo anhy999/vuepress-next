@@ -1,1 +1,1 @@
-export const { version } = require('@vuepress/core/package.json')
+export const version = __VUEPRESS_VERSION__

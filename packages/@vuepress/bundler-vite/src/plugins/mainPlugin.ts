@@ -1,6 +1,7 @@
 import type { App } from '@vuepress/core'
 import { fs } from '@vuepress/utils'
-import * as history from 'connect-history-api-fallback'
+import autoprefixer from 'autoprefixer'
+import history from 'connect-history-api-fallback'
 import type { AliasOptions, Connect, Plugin, UserConfig } from 'vite'
 
 /**
@@ -56,7 +57,7 @@ import '@vuepress/client/app'
       },
       css: {
         postcss: {
-          plugins: isServer ? [] : [require('autoprefixer')],
+          plugins: isServer ? [] : [autoprefixer as any],
         },
         preprocessorOptions: {
           scss: { charset: false },

@@ -1,4 +1,5 @@
 import type { App } from '@vuepress/core'
+import HtmlPlugin from 'html-webpack-plugin'
 import { HotModuleReplacementPlugin } from 'webpack'
 import type * as Config from 'webpack-chain'
 import { createClientBaseConfig } from '../config'
@@ -14,7 +15,7 @@ export const createDevConfig = async (
     isBuild: false,
   })
 
-  config.plugin('html').use(require('html-webpack-plugin'), [
+  config.plugin('html').use(HtmlPlugin, [
     {
       template: app.options.templateDev,
     },

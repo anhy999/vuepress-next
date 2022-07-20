@@ -1,4 +1,7 @@
-import type { App } from '@vuepress/core'
+import { createRequire } from 'node:module'
+import autoprefixer from 'autoprefixer'
+import { loader as MiniCssExtractPlugin } from 'mini-css-extract-plugin'
+import postcssCsso from 'postcss-csso'
 import type * as Config from 'webpack-chain'
 import type {
   LessLoaderOptions,
@@ -8,19 +11,19 @@ import type {
   WebpackBundlerOptions,
 } from '../types'
 
+const require = createRequire(import.meta.url)
+
 type StyleRule = Config.Rule<Config.Rule<Config.Module>>
 
 /**
  * Set webpack module to handle style files
  */
 export const handleModuleStyles = ({
-  app,
   options,
   config,
   isBuild,
   isServer,
 }: {
-  app: App
   options: WebpackBundlerOptions
   config: Config
   isBuild: boolean
@@ -58,9 +61,7 @@ export const handleModuleStyles = ({
   }): void => {
     if (!isServer) {
       if (isBuild) {
-        rule
-          .use('extract-css-loader')
-          .loader(require('mini-css-extract-plugin').loader)
+        rule.use('extract-css-loader').loader(MiniCssExtractPlugin)
       } else {
         rule.use('style-loader').loader(require.resolve('style-loader'))
       }
@@ -86,7 +87,7 @@ export const handleModuleStyles = ({
       .loader(require.resolve('postcss-loader'))
       .options({
         postcssOptions: {
-          plugins: [require('autoprefixer'), require('postcss-csso')],
+          plugins: [autoprefixer, postcssCsso],
         },
         ...options.postcss,
       })

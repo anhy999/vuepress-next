@@ -8,5 +8,3 @@ import type { AppConfig, PluginObject } from '@vuepress/core'
 export type UserConfig = Partial<AppConfig> &
   // user config can be used as a plugin
   Omit<PluginObject, 'name' | 'multiple'>
-
-export type UserConfigLoader = (userConfigPath: string) => Promise<UserConfig>

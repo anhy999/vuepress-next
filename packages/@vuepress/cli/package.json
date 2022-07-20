@@ -16,10 +16,16 @@
   },
   "license": "MIT",
   "author": "meteorlxy",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./bin/*": "./bin/*",
+    "./package.json": "./package.json"
+  },
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "bin": {
-    "vuepress-cli": "bin/vuepress.js"
+    "vuepress-cli": "./bin/vuepress.mjs"
   },
   "files": [
     "bin",

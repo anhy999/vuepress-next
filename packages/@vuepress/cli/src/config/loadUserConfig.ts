@@ -1,9 +1,4 @@
-import { loadUserConfigCjs } from './loadUserConfigCjs'
-import type { UserConfig, UserConfigLoader } from './types'
-
-const loaderMap: [RegExp, UserConfigLoader][] = [
-  [/\.(js|cjs|ts)$/, loadUserConfigCjs],
-]
+import type { UserConfig } from './types'
 
 /**
  * Load user config file
@@ -13,11 +8,10 @@ export const loadUserConfig = async (
 ): Promise<UserConfig> => {
   if (!userConfigPath) return {}
 
-  for (const [condition, loader] of loaderMap) {
-    if (condition.test(userConfigPath)) {
-      return loader(userConfigPath)
-    }
+  try {
+    const userConfigModule = await import(userConfigPath)
+    return userConfigModule.default
+  } catch {
+    return {}
   }
-
-  return {}
 }

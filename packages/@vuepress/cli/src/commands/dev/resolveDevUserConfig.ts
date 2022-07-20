@@ -1,7 +1,10 @@
+import { createRequire } from 'node:module'
 import * as os from 'os'
 import { win32 } from 'path'
 import { loadUserConfig } from '../../config'
 import type { UserConfig } from '../../config'
+
+const require = createRequire(import.meta.url)
 
 /**
  * The key of `require.cache` is using backslash as separator on win32

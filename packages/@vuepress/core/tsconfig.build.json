@@ -1,13 +1,10 @@
 {
   "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "ESNext",
     "rootDir": "./src",
     "outDir": "./lib"
   },
   "include": ["./src"],
-  "references": [
-    { "path": "../markdown/tsconfig.build.json" },
-    { "path": "../utils/tsconfig.build.json" }
-  ]
+  "references": [{ "path": "../markdown/tsconfig.build.json" }]
 }

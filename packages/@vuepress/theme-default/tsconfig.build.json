@@ -12,7 +12,6 @@
     { "path": "../plugin-palette/tsconfig.build.json" },
     { "path": "../plugin-prismjs/tsconfig.build.json" },
     { "path": "../plugin-theme-data/tsconfig.build.json" },
-    { "path": "../utils/tsconfig.build.json" },
     { "path": "./tsconfig.esm.json" },
     { "path": "./tsconfig.cjs.json" }
   ],

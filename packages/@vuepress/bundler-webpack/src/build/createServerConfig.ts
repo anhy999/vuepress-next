@@ -1,7 +1,10 @@
+import { createRequire } from 'node:module'
 import type { App } from '@vuepress/core'
 import type * as Config from 'webpack-chain'
 import { createBaseConfig } from '../config'
 import type { WebpackBundlerOptions } from '../types'
+
+const require = createRequire(import.meta.url)
 
 export const createServerConfig = async (
   app: App,
@@ -30,7 +33,7 @@ export const createServerConfig = async (
   config.target('node')
 
   // set externals
-  // externalize vue in ssr mode, because we need to `require('vue')` in node side
+  // externalize vue in ssr mode, because we need to `import('vue')` in node side
   // for ssr usage, then we also need vue as peer-dependency when using pnpm
   config.externals(['vue'])
 

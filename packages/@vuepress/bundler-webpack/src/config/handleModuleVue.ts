@@ -1,8 +1,11 @@
+import { createRequire } from 'node:module'
 import type { App } from '@vuepress/core'
 import { VueLoaderPlugin } from 'vue-loader'
 import type { VueLoaderOptions } from 'vue-loader'
 import type * as Config from 'webpack-chain'
 import type { WebpackBundlerOptions } from '../types'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Set webpack module to handle vue files

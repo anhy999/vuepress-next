@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig-vuepress/base.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "composite": true,
     "lib": ["DOM", "ES2020"],
     "moduleResolution": "Node",

@@ -1,8 +1,10 @@
+import { createRequire } from 'node:module'
 import type { AppConfig } from '@vuepress/core'
 import { chalk } from '@vuepress/utils'
 import { cac } from 'cac'
 import { createBuild, createDev, info } from './commands'
-import { allowTs } from './utils'
+
+const require = createRequire(import.meta.url)
 
 /**
  * Wrap raw command to catch errors and exit process
@@ -20,9 +22,6 @@ const wrapCommand = (cmd: (...args: any[]) => Promise<void>): typeof cmd => {
  * Vuepress cli
  */
 export const cli = (defaultAppConfig: Partial<AppConfig> = {}): void => {
-  // allow ts files globally
-  allowTs()
-
   // create cac instance
   const program = cac('vuepress')
 
