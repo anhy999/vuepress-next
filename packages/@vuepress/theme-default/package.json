@@ -20,7 +20,8 @@
   "author": "meteorlxy",
   "type": "module",
   "exports": {
-    ".": "./lib/nodes/index.js",
+    ".": "./lib/node/index.js",
+    "./node": "./lib/node/index.js",
     "./client": "./lib/client/index.js",
     "./templates/*": "./templates/*",
     "./package.json": "./package.json"

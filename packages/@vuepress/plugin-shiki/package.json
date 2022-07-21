@@ -21,7 +21,8 @@
   "author": "meteorlxy",
   "type": "module",
   "exports": {
-    ".": "./lib/nodes/index.js",
+    ".": "./lib/node/index.js",
+    "./node": "./lib/node/index.js",
     "./package.json": "./package.json"
   },
   "main": "./lib/node/index.js",
