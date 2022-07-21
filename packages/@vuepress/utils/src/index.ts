@@ -8,8 +8,8 @@ import path from 'upath'
 
 export { debug, chalk, fs, globby, hash, ora, path }
 
-export * from './isChildPath'
-export * from './logger'
-export * from './renderHead'
-export * from './renderHeadAttrs'
-export * from './withSpinner'
+export * from './isChildPath.js'
+export * from './logger.js'
+export * from './renderHead.js'
+export * from './renderHeadAttrs.js'
+export * from './withSpinner.js'

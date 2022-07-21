@@ -1,5 +1,5 @@
 import type { HeadConfig } from '@vuepress/shared'
-import { renderHeadAttrs } from './renderHeadAttrs'
+import { renderHeadAttrs } from './renderHeadAttrs.js'
 
 /**
  * Render head config to string

@@ -1,6 +1,6 @@
 import type { App, Component } from 'vue'
 import type { Router } from 'vue-router'
-import type { SiteDataRef } from '../composables'
+import type { SiteDataRef } from '../composables/index.js'
 
 /**
  * Configure vuepress client

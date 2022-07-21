@@ -1,4 +1,4 @@
-import type { HeadConfig } from './head'
+import type { HeadConfig } from './head.js'
 
 /**
  * Context for SSR

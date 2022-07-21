@@ -6,12 +6,12 @@
     "module": "ESNext",
     "paths": {
       "@internal/searchIndex": [
-        "./packages/@vuepress/plugin-search/src/client/searchIndex"
+        "./packages/@vuepress/plugin-search/src/client/searchIndex.d.ts"
       ],
       "@internal/themeData": [
-        "./packages/@vuepress/plugin-theme-data/src/client/themeData"
+        "./packages/@vuepress/plugin-theme-data/src/client/themeData.d.ts"
       ],
-      "@internal/*": ["./packages/@vuepress/client/src/types/internal/*"],
+      "@internal/*": ["./packages/@vuepress/client/src/types/internal/*.d.ts"],
       "@theme/*": [
         "./packages/@vuepress/theme-default/src/client/components/*"
       ],

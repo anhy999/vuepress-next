@@ -1,5 +1,5 @@
-import { isLinkFtp } from './isLinkFtp'
-import { isLinkHttp } from './isLinkHttp'
+import { isLinkFtp } from './isLinkFtp.js'
+import { isLinkHttp } from './isLinkHttp.js'
 
 const markdownLinkRegexp = /.md((\?|#).*)?$/
 

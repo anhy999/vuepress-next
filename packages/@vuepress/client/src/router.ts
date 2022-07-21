@@ -7,9 +7,9 @@ import {
   START_LOCATION,
 } from 'vue-router'
 import type { Router } from 'vue-router'
-import { pageData, siteData } from './composables'
-import { resolvers } from './resolvers'
-import { createRoutes } from './routes'
+import { pageData, siteData } from './composables/index.js'
+import { resolvers } from './resolvers.js'
+import { createRoutes } from './routes.js'
 
 /**
  * - use `createWebHistory` in dev mode and build mode client bundle

@@ -1,6 +1,6 @@
 import { pagesRoutes } from '@internal/pagesRoutes'
 import type { RouteRecordRaw } from 'vue-router'
-import { Vuepress } from './components'
+import { Vuepress } from './components/index.js'
 
 /**
  * Create routes for vue-router

@@ -1,13 +1,12 @@
 import { clientConfigs } from '@internal/clientConfigs'
 import { createApp, createSSRApp, h } from 'vue'
 import { RouterView } from 'vue-router'
-import { siteData } from './composables'
-import { createVueRouter } from './router'
-import { setupDevtools } from './setupDevtools'
-import { setupGlobalComponents } from './setupGlobalComponents'
-import { setupGlobalComputed } from './setupGlobalComputed'
-import { setupUpdateHead } from './setupUpdateHead'
-import type { CreateVueAppFunction } from './types'
+import { siteData } from './composables/index.js'
+import { createVueRouter } from './router.js'
+import { setupGlobalComponents } from './setupGlobalComponents.js'
+import { setupGlobalComputed } from './setupGlobalComputed.js'
+import { setupUpdateHead } from './setupUpdateHead.js'
+import type { CreateVueAppFunction } from './types/index.js'
 
 /**
  * - use `createApp` in dev mode
@@ -47,6 +46,7 @@ export const createVueApp: CreateVueAppFunction = async () => {
 
   // setup devtools in dev mode
   if (__VUEPRESS_DEV__ || __VUE_PROD_DEVTOOLS__) {
+    const { setupDevtools } = await import('./setupDevtools.js')
     setupDevtools(app, globalComputed)
   }
 

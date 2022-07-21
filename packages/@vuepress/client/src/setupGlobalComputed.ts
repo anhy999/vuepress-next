@@ -10,7 +10,7 @@ import {
   routeLocaleSymbol,
   siteData,
   siteLocaleDataSymbol,
-} from './composables'
+} from './composables/index.js'
 import type {
   PageData,
   PageDataRef,
@@ -28,9 +28,9 @@ import type {
   SiteDataRef,
   SiteLocaleData,
   SiteLocaleDataRef,
-} from './composables'
-import { resolvers } from './resolvers'
-import { withBase } from './withBase'
+} from './composables/index.js'
+import { resolvers } from './resolvers.js'
+import { withBase } from './withBase.js'
 
 /**
  * Vuepress client global computed

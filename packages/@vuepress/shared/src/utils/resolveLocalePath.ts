@@ -1,4 +1,4 @@
-import type { LocaleConfig } from '../types'
+import type { LocaleConfig } from '../types/index.js'
 
 /**
  * Resolve the matched locale path of route path

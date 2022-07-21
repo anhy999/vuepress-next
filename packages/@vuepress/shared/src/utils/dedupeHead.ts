@@ -1,5 +1,5 @@
-import type { HeadConfig } from '../types'
-import { resolveHeadIdentifier } from './resolveHeadIdentifier'
+import type { HeadConfig } from '../types/index.js'
+import { resolveHeadIdentifier } from './resolveHeadIdentifier.js'
 
 /**
  * Dedupe head config with identifier

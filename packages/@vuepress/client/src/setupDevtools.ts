@@ -1,7 +1,7 @@
 import { setupDevtoolsPlugin } from '@vue/devtools-api'
 import { watch } from 'vue'
 import type { App } from 'vue'
-import type { GlobalComputed } from './setupGlobalComputed'
+import type { GlobalComputed } from './setupGlobalComputed.js'
 
 const PLUGIN_ID = 'org.vuejs.vuepress'
 const PLUGIN_LABEL = 'VuePress'

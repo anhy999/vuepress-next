@@ -1,3 +1,3 @@
-export * from './clientConfig'
-export * from './createVueAppFunction'
-export * from './pageRouteItem'
+export * from './clientConfig.js'
+export * from './createVueAppFunction.js'
+export * from './pageRouteItem.js'

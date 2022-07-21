@@ -1,7 +1,7 @@
 import type { PageData } from '@vuepress/shared'
 import { readonly, ref } from 'vue'
 import type { Ref } from 'vue'
-import { pagesData } from './pagesData'
+import { pagesData } from './pagesData.js'
 
 export type { PageData }
 

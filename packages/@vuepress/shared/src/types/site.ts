@@ -1,5 +1,5 @@
-import type { HeadConfig } from './head'
-import type { LocaleConfig } from './locale'
+import type { HeadConfig } from './head.js'
+import type { LocaleConfig } from './locale.js'
 
 /**
  * Vuepress site data

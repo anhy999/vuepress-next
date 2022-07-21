@@ -1,7 +1,7 @@
 import { layoutComponents } from '@internal/layoutComponents'
 import { isString } from '@vuepress/shared'
 import { computed, defineComponent, h, resolveComponent } from 'vue'
-import { usePageData } from '../composables'
+import { usePageData } from '../composables/index.js'
 
 /**
  * Global Layout

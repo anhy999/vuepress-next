@@ -2,8 +2,12 @@ import { isPlainObject, isString } from '@vuepress/shared'
 import type { HeadConfig, VuepressSSRContext } from '@vuepress/shared'
 import { onMounted, provide, ref, useSSRContext, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { updateHeadSymbol, usePageHead, usePageLang } from './composables'
-import type { UpdateHead } from './composables'
+import {
+  updateHeadSymbol,
+  usePageHead,
+  usePageLang,
+} from './composables/index.js'
+import type { UpdateHead } from './composables/index.js'
 
 /**
  * Auto update head and provide as global util

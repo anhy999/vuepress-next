@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import { ClientOnly, Content } from './components'
+import { ClientOnly, Content } from './components/index.js'
 
 /**
  * Register global built-in components

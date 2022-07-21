@@ -5,7 +5,7 @@ import {
   resolveLocalePath,
 } from '@vuepress/shared'
 import { reactive } from 'vue'
-import { pageDataEmpty, pagesData } from './composables'
+import { pageDataEmpty, pagesData } from './composables/index.js'
 import type {
   PageData,
   PageFrontmatter,
@@ -15,7 +15,7 @@ import type {
   RouteLocale,
   SiteData,
   SiteLocaleData,
-} from './composables'
+} from './composables/index.js'
 
 /**
  * Resolver methods to get global computed

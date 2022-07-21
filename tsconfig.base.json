@@ -4,7 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "composite": true,
     "lib": ["DOM", "ES2020"],
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "noEmitOnError": true,
     "noImplicitAny": false,
     "skipLibCheck": true,

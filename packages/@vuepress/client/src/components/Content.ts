@@ -1,6 +1,6 @@
 import { pagesComponents } from '@internal/pagesComponents'
 import { computed, defineComponent, h } from 'vue'
-import { usePageData } from '../composables'
+import { usePageData } from '../composables/index.js'
 
 /**
  * Markdown rendered content

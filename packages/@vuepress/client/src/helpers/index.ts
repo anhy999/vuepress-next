@@ -1,1 +1,1 @@
-export * from './defineClientConfig'
+export * from './defineClientConfig.js'
