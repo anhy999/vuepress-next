@@ -19,7 +19,7 @@
   "type": "module",
   "exports": {
     ".": "./lib/index.js",
-    "./bin/*": "./bin/*",
+    "./bin": "./bin/vuepress.mjs",
     "./package.json": "./package.json"
   },
   "main": "./lib/index.js",
