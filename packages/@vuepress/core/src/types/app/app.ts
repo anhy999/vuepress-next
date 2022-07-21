@@ -1,11 +1,11 @@
 import type { Markdown } from '@vuepress/markdown'
 import type { SiteData } from '@vuepress/shared'
-import type { Bundler } from '../bundler'
-import type { Page } from '../page'
-import type { Plugin } from '../plugin'
-import type { PluginApi } from '../pluginApi'
-import type { AppOptions } from './options'
-import type { AppDir, AppEnv, AppWriteTemp } from './utils'
+import type { Bundler } from '../bundler.js'
+import type { Page } from '../page.js'
+import type { Plugin } from '../plugin.js'
+import type { PluginApi } from '../pluginApi/index.js'
+import type { AppOptions } from './options.js'
+import type { AppDir, AppEnv, AppWriteTemp } from './utils.js'
 
 /**
  * Vuepress app

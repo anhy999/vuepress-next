@@ -1,6 +1,6 @@
 import { createRequire } from 'node:module'
 import { path } from '@vuepress/utils'
-import type { AppConfig, AppOptions } from '../types'
+import type { AppConfig, AppOptions } from '../types/index.js'
 
 const require = createRequire(import.meta.url)
 

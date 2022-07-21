@@ -1,7 +1,7 @@
 import type { PluginWithOptions } from 'markdown-it'
-import type { RenderRule } from 'markdown-it/lib/renderer'
-import type { MarkdownEnv } from '../../types'
-import { resolveLink } from './resolveLink'
+import type { RenderRule } from 'markdown-it/lib/renderer.js'
+import type { MarkdownEnv } from '../../types.js'
+import { resolveLink } from './resolveLink.js'
 
 export interface AssetsPluginOptions {
   /**

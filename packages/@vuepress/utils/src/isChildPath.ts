@@ -1,4 +1,4 @@
-import * as path from 'upath'
+import path from 'upath'
 
 /**
  * Check if `child` is a sub path of `parent` or not. Return `true` if

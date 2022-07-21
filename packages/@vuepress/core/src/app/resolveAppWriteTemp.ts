@@ -1,5 +1,5 @@
 import { fs } from '@vuepress/utils'
-import type { AppDir, AppWriteTemp } from '../types'
+import type { AppDir, AppWriteTemp } from '../types/index.js'
 
 /**
  * Resolve write temp file util for vuepress app

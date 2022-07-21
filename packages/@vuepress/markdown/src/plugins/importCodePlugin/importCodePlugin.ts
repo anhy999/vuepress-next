@@ -1,7 +1,7 @@
 import type { PluginWithOptions } from 'markdown-it'
-import type { MarkdownEnv } from '../../types'
-import { createImportCodeBlockRule } from './createImportCodeBlockRule'
-import { resolveImportCode } from './resolveImportCode'
+import type { MarkdownEnv } from '../../types.js'
+import { createImportCodeBlockRule } from './createImportCodeBlockRule.js'
+import { resolveImportCode } from './resolveImportCode.js'
 
 export interface ImportCodePluginOptions {
   /**

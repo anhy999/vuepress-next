@@ -1,8 +1,11 @@
 import type { PluginWithOptions } from 'markdown-it'
-import { isHighlightLine, resolveHighlightLines } from './resolveHighlightLines'
-import { resolveLanguage } from './resolveLanguage'
-import { resolveLineNumbers } from './resolveLineNumbers'
-import { resolveVPre } from './resolveVPre'
+import {
+  isHighlightLine,
+  resolveHighlightLines,
+} from './resolveHighlightLines.js'
+import { resolveLanguage } from './resolveLanguage.js'
+import { resolveLineNumbers } from './resolveLineNumbers.js'
+import { resolveVPre } from './resolveVPre.js'
 
 export interface CodePluginOptions {
   /**

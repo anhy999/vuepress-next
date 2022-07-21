@@ -1,5 +1,5 @@
 import { slugify as defaultSlugify } from '@mdit-vue/shared'
-import * as MarkdownIt from 'markdown-it'
+import MarkdownIt from 'markdown-it'
 import {
   anchorPlugin,
   assetsPlugin,
@@ -13,7 +13,7 @@ import {
   sfcPlugin,
   titlePlugin,
   tocPlugin,
-} from './plugins'
+} from './plugins.js'
 import type {
   AnchorPluginOptions,
   AssetsPluginOptions,
@@ -25,8 +25,8 @@ import type {
   LinksPluginOptions,
   SfcPluginOptions,
   TocPluginOptions,
-} from './plugins'
-import type { Markdown, MarkdownOptions } from './types'
+} from './plugins.js'
+import type { Markdown, MarkdownOptions } from './types.js'
 
 /**
  * Create vuepress customized markdown-it instance
@@ -65,9 +65,11 @@ export const createMarkdown = ({
 
   // add anchor to headers
   if (anchor !== false) {
+    // @ts-expect-error: types error with markdown-it-anchor
     md.use<AnchorPluginOptions>(anchorPlugin, {
       level: [1, 2, 3, 4, 5, 6],
       slugify,
+      // @ts-expect-error: types error with markdown-it-anchor
       permalink: anchorPlugin.permalink.ariaHidden({
         class: 'header-anchor',
         symbol: '#',

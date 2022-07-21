@@ -18,17 +18,17 @@
   "author": "meteorlxy",
   "type": "module",
   "exports": {
-    ".": "./lib/index.js",
+    ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "lib"
+    "./dist"
   ],
   "scripts": {
-    "build": "tsc -b tsconfig.build.json",
-    "clean": "rimraf lib *.tsbuildinfo"
+    "build": "tsup",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@mdit-vue/plugin-component": "^0.9.0",
@@ -50,5 +50,21 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "tsup": {
+    "clean": true,
+    "dts": [
+      "src/index.ts"
+    ],
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "outDir": "dist",
+    "sourcemap": false,
+    "target": "es2020",
+    "tsconfig": "tsconfig.dts.json"
   }
 }

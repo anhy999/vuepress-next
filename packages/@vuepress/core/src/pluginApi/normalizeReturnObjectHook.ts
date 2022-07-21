@@ -1,5 +1,5 @@
 import { isFunction } from '@vuepress/shared'
-import type { ReturnObjectHook } from '../types'
+import type { ReturnObjectHook } from '../types/index.js'
 
 /**
  * Normalize hook that returns an object

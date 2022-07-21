@@ -1,5 +1,5 @@
-import type { App } from './app'
-import type { HooksExposed } from './pluginApi'
+import type { App } from './app/index.js'
+import type { HooksExposed } from './pluginApi/index.js'
 
 /**
  * Vuepress plugin

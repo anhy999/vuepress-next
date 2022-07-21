@@ -1,6 +1,6 @@
 import type { Markdown, MarkdownOptions } from '@vuepress/markdown'
-import type { App } from '../app'
-import type { Page, PageOptions } from '../page'
+import type { App } from '../app/index.js'
+import type { Page, PageOptions } from '../page.js'
 
 // util type
 type PromiseOrNot<T> = Promise<T> | T

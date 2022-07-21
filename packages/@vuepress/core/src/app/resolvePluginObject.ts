@@ -1,5 +1,5 @@
 import { isFunction } from '@vuepress/shared'
-import type { App, Plugin, PluginObject } from '../types'
+import type { App, Plugin, PluginObject } from '../types/index.js'
 
 /**
  * Resolve a plugin object according to name / path / module and config

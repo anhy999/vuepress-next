@@ -1,5 +1,5 @@
-import type { PluginObject } from '../plugin'
-import type { HookQueue, HooksName } from './hooks'
+import type { PluginObject } from '../plugin.js'
+import type { HookQueue, HooksName } from './hooks.js'
 
 /**
  * Vuepress plugin system

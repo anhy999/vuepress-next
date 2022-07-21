@@ -1,4 +1,4 @@
-import type { AppEnv, AppOptions } from '../types'
+import type { AppEnv, AppOptions } from '../types/index.js'
 
 /**
  * Resolve environment flags for vuepress app

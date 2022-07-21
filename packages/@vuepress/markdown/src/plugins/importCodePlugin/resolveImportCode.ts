@@ -1,6 +1,6 @@
 import { fs, path } from '@vuepress/utils'
-import type { MarkdownEnv } from '../../types'
-import type { ImportCodeTokenMeta } from './types'
+import type { MarkdownEnv } from '../../types.js'
+import type { ImportCodeTokenMeta } from './types.js'
 
 export const resolveImportCode = (
   { importPath, lineStart, lineEnd }: ImportCodeTokenMeta,

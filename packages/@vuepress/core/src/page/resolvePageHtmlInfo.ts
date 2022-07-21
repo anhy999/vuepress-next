@@ -1,5 +1,5 @@
 import { removeLeadingSlash } from '@vuepress/shared'
-import type { App } from '../types'
+import type { App } from '../types/index.js'
 
 /**
  * Resolve page rendered html file path

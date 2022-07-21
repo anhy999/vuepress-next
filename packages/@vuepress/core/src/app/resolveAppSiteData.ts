@@ -1,4 +1,4 @@
-import type { AppOptions, SiteData } from '../types'
+import type { AppOptions, SiteData } from '../types/index.js'
 
 /**
  * Resolve site data for vuepress app

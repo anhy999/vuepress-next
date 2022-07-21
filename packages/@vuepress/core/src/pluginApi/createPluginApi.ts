@@ -1,6 +1,6 @@
-import type { PluginApi } from '../types'
-import { createPluginApiHooks } from './createPluginApiHooks'
-import { createPluginApiRegisterHooks } from './createPluginApiRegisterHooks'
+import type { PluginApi } from '../types/index.js'
+import { createPluginApiHooks } from './createPluginApiHooks.js'
+import { createPluginApiRegisterHooks } from './createPluginApiRegisterHooks.js'
 
 export const createPluginApi = (): PluginApi => {
   const plugins: PluginApi['plugins'] = []

@@ -1,6 +1,6 @@
 import { path } from '@vuepress/utils'
 import { decode } from 'mdurl'
-import type { MarkdownEnv } from '../../types'
+import type { MarkdownEnv } from '../../types.js'
 
 export const resolveLink = (
   link: string,

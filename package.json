@@ -7,7 +7,7 @@
     "build:all": "pnpm -r --stream build",
     "build:copy": "pnpm --parallel --stream copy",
     "build:tsc": "tsc -b tsconfig.build.json",
-    "build:tsup": "pnpm --filter=@vuepress/client --filter=@vuepress/shared --filter=@vuepress/utils --parallel --stream build",
+    "build:tsup": "pnpm --filter=@vuepress/cli --filter=@vuepress/client --filter=@vuepress/core --filter=@vuepress/markdown --filter=@vuepress/shared --filter=@vuepress/utils --parallel --stream build",
     "clean": "pnpm --parallel --stream clean",
     "dev:copy": "pnpm build:copy --watch",
     "dev:tsc": "pnpm build:tsc --watch",

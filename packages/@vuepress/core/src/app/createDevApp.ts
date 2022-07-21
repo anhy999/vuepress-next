@@ -1,5 +1,5 @@
-import type { AppConfig, DevApp } from '../types'
-import { createBaseApp } from './createBaseApp'
+import type { AppConfig, DevApp } from '../types/index.js'
+import { createBaseApp } from './createBaseApp.js'
 
 /**
  * Create vuepress dev app

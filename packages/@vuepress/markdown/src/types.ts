@@ -1,6 +1,6 @@
 import type { MarkdownItEnv } from '@mdit-vue/types'
 import type { PageFrontmatter, PageHeader } from '@vuepress/shared'
-import type * as MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-it'
 import type {
   AnchorPluginOptions,
   AssetsPluginOptions,
@@ -12,7 +12,7 @@ import type {
   LinksPluginOptions,
   SfcPluginOptions,
   TocPluginOptions,
-} from './plugins'
+} from './plugins.js'
 
 export type Markdown = MarkdownIt
 

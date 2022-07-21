@@ -1,6 +1,6 @@
 import { isFunction } from '@vuepress/shared'
 import { fs, logger } from '@vuepress/utils'
-import type { ClientConfigFileHook } from '../types'
+import type { ClientConfigFileHook } from '../types/index.js'
 
 /**
  * Normalize hook for client config file

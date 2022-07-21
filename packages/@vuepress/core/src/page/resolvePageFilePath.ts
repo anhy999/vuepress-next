@@ -1,5 +1,5 @@
 import { logger, path } from '@vuepress/utils'
-import type { App, PageOptions } from '../types'
+import type { App, PageOptions } from '../types/index.js'
 
 /**
  * Resolve absolute and relative path of page file

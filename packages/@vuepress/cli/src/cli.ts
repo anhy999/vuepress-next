@@ -2,7 +2,7 @@ import { createRequire } from 'node:module'
 import type { AppConfig } from '@vuepress/core'
 import { chalk } from '@vuepress/utils'
 import { cac } from 'cac'
-import { createBuild, createDev, info } from './commands'
+import { createBuild, createDev, info } from './commands/index.js'
 
 const require = createRequire(import.meta.url)
 

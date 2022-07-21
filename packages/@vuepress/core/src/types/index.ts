@@ -28,9 +28,9 @@ export type {
   SiteLocaleConfig,
 }
 
-export * from './app'
-export * from './bundler'
-export * from './page'
-export * from './plugin'
-export * from './pluginApi'
-export * from './theme'
+export * from './app/index.js'
+export * from './bundler.js'
+export * from './page.js'
+export * from './plugin.js'
+export * from './pluginApi/index.js'
+export * from './theme.js'

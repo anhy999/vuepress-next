@@ -1,6 +1,6 @@
 import { ensureLeadingSlash, isString } from '@vuepress/shared'
 import { path } from '@vuepress/utils'
-import type { App, PageFrontmatter } from '../types'
+import type { App, PageFrontmatter } from '../types/index.js'
 
 /**
  * Resolve page permalink from frontmatter / options / pattern

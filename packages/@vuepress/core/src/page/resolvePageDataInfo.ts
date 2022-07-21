@@ -1,5 +1,5 @@
 import { path } from '@vuepress/utils'
-import type { App } from '../types'
+import type { App } from '../types/index.js'
 
 /**
  * Resolve page data file path

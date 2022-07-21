@@ -1,4 +1,4 @@
-import type { PageFrontmatter } from '../types'
+import type { PageFrontmatter } from '../types/index.js'
 
 /**
  * Resolve page route meta

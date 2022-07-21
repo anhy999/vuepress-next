@@ -1,7 +1,7 @@
 import { debug } from '@vuepress/utils'
-import type { App } from '../types'
-import { resolveAppMarkdown } from './resolveAppMarkdown'
-import { resolveAppPages } from './resolveAppPages'
+import type { App } from '../types/index.js'
+import { resolveAppMarkdown } from './resolveAppMarkdown.js'
+import { resolveAppPages } from './resolveAppPages.js'
 
 const log = debug('vuepress:core/app')
 

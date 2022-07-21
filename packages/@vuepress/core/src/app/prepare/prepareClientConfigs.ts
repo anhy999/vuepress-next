@@ -1,4 +1,4 @@
-import type { App } from '../../types'
+import type { App } from '../../types/index.js'
 
 /**
  * Generate client configs temp file

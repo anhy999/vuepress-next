@@ -1,6 +1,6 @@
 import { debug, globby } from '@vuepress/utils'
-import { createPage } from '../page'
-import type { App, Page } from '../types'
+import { createPage } from '../page/index.js'
+import type { App, Page } from '../types/index.js'
 
 const log = debug('vuepress:core/app')
 

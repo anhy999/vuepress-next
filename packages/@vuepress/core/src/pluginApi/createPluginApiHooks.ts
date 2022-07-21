@@ -1,5 +1,5 @@
-import type { PluginApi } from '../types'
-import { createHookQueue } from './createHookQueue'
+import type { PluginApi } from '../types/index.js'
+import { createHookQueue } from './createHookQueue.js'
 
 export const createPluginApiHooks = (): PluginApi['hooks'] => ({
   // life cycle hooks

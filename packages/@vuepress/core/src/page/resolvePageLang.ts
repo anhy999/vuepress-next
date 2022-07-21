@@ -1,5 +1,5 @@
 import { isString } from '@vuepress/shared'
-import type { App, PageFrontmatter } from '../types'
+import type { App, PageFrontmatter } from '../types/index.js'
 
 /**
  * Resolve language of page

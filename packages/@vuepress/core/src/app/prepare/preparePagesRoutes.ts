@@ -1,6 +1,6 @@
 import type { PageRouteItem } from '@vuepress/client'
 import { ensureLeadingSlash } from '@vuepress/shared'
-import type { App, Page } from '../../types'
+import type { App, Page } from '../../types/index.js'
 
 /**
  * Resolve page route item

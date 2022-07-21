@@ -1,4 +1,4 @@
-import type { App, Page } from '../../types'
+import type { App, Page } from '../../types/index.js'
 
 const HMR_CODE = `
 if (import.meta.webpackHot) {

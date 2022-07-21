@@ -6,9 +6,9 @@ import {
   resolveUserConfigConventionalPath,
   resolveUserConfigPath,
   transformUserConfigToPlugin,
-} from '../../config'
-import { resolveAppConfig, resolveCliAppConfig } from '../../utils'
-import type { BuildCommand } from './types'
+} from '../../config/index.js'
+import { resolveAppConfig, resolveCliAppConfig } from '../../utils/index.js'
+import type { BuildCommand } from './types.js'
 
 const log = debug('vuepress:cli/build')
 

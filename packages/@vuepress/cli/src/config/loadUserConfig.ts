@@ -1,4 +1,4 @@
-import type { UserConfig } from './types'
+import type { UserConfig } from './types.js'
 
 /**
  * Load user config file

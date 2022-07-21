@@ -2,10 +2,10 @@ import type { App, Page } from '@vuepress/core'
 import { chalk, logger } from '@vuepress/utils'
 import * as chokidar from 'chokidar'
 import type { FSWatcher } from 'chokidar'
-import { handlePageAdd } from './handlePageAdd'
-import { handlePageChange } from './handlePageChange'
-import { handlePageUnlink } from './handlePageUnlink'
-import { createPageDepsHelper } from './pageDepsHelper'
+import { handlePageAdd } from './handlePageAdd.js'
+import { handlePageChange } from './handlePageChange.js'
+import { handlePageUnlink } from './handlePageUnlink.js'
+import { createPageDepsHelper } from './pageDepsHelper.js'
 
 /**
  * Watch page files and deps, return file watchers

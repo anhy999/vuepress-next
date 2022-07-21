@@ -1,5 +1,5 @@
 import { ensureLeadingSlash, resolveLocalePath } from '@vuepress/shared'
-import type { App } from '../types'
+import type { App } from '../types/index.js'
 
 /**
  * Infer page path according to file path

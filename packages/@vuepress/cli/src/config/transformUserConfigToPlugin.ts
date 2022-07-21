@@ -1,6 +1,6 @@
 import type { PluginObject } from '@vuepress/core'
 import { fs, path } from '@vuepress/utils'
-import type { UserConfig } from './types'
+import type { UserConfig } from './types.js'
 
 /**
  * Transform user config to a vuepress plugin

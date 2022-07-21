@@ -3,9 +3,6 @@
   "references": [
     { "path": "./packages/@vuepress/bundler-vite/tsconfig.build.json" },
     { "path": "./packages/@vuepress/bundler-webpack/tsconfig.build.json" },
-    { "path": "./packages/@vuepress/cli/tsconfig.build.json" },
-    { "path": "./packages/@vuepress/core/tsconfig.build.json" },
-    { "path": "./packages/@vuepress/markdown/tsconfig.build.json" },
     {
       "path": "./packages/@vuepress/plugin-active-header-links/tsconfig.build.json"
     },

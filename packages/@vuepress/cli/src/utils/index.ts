@@ -1,3 +1,3 @@
-export * from './esbuildUtils'
-export * from './resolveAppConfig'
-export * from './resolveCliAppConfig'
+export * from './esbuildUtils.js'
+export * from './resolveAppConfig.js'
+export * from './resolveCliAppConfig.js'

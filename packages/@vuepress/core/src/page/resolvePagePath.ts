@@ -1,6 +1,6 @@
 import { ensureEndingSlash } from '@vuepress/shared'
 import { logger } from '@vuepress/utils'
-import type { PageOptions } from '../types'
+import type { PageOptions } from '../types/index.js'
 
 /**
  * Resolve the final route path of a page

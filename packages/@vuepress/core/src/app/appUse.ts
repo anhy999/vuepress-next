@@ -1,6 +1,6 @@
 import { chalk, debug, warn } from '@vuepress/utils'
-import type { App, Plugin } from '../types'
-import { resolvePluginObject } from './resolvePluginObject'
+import type { App, Plugin } from '../types/index.js'
+import { resolvePluginObject } from './resolvePluginObject.js'
 
 const log = debug('vuepress:core/app')
 

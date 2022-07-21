@@ -3,7 +3,7 @@ import type {
   PluginConfig,
   PluginFunction,
   PluginObject,
-} from './plugin'
+} from './plugin.js'
 
 /**
  * Vuepress theme

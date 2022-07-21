@@ -18,22 +18,22 @@
   "author": "meteorlxy",
   "type": "module",
   "exports": {
-    ".": "./lib/index.js",
-    "./bin": "./bin/vuepress.mjs",
+    ".": "./dist/index.js",
+    "./bin": "./bin/vuepress.js",
     "./package.json": "./package.json"
   },
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
-    "vuepress-cli": "./bin/vuepress.mjs"
+    "vuepress-cli": "./bin/vuepress.js"
   },
   "files": [
-    "bin",
-    "lib"
+    "./bin",
+    "./dist"
   ],
   "scripts": {
-    "build": "tsc -b tsconfig.build.json",
-    "clean": "rimraf lib *.tsbuildinfo"
+    "build": "tsup",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@vuepress/core": "workspace:*",
@@ -49,5 +49,21 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "tsup": {
+    "clean": true,
+    "dts": [
+      "src/index.ts"
+    ],
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "outDir": "dist",
+    "sourcemap": false,
+    "target": "es2020",
+    "tsconfig": "tsconfig.dts.json"
   }
 }

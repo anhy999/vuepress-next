@@ -1,6 +1,6 @@
-import type { App, Theme, ThemeInfo } from '../types'
-import { resolvePluginObject } from './resolvePluginObject'
-import { resolveThemeLayouts } from './resolveThemeLayouts'
+import type { App, Theme, ThemeInfo } from '../types/index.js'
+import { resolvePluginObject } from './resolvePluginObject.js'
+import { resolveThemeLayouts } from './resolveThemeLayouts.js'
 
 /**
  * Resolve theme info and its parent theme info

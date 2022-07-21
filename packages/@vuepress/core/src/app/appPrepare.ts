@@ -1,5 +1,5 @@
 import { debug } from '@vuepress/utils'
-import type { App } from '../types'
+import type { App } from '../types/index.js'
 import {
   prepareClientConfigs,
   prepareLayoutComponents,
@@ -9,7 +9,7 @@ import {
   preparePagesData,
   preparePagesRoutes,
   prepareSiteData,
-} from './prepare'
+} from './prepare/index.js'
 
 const log = debug('vuepress:core/app')
 

@@ -6,12 +6,12 @@ import {
   resolveUserConfigConventionalPath,
   resolveUserConfigPath,
   transformUserConfigToPlugin,
-} from '../../config'
-import { resolveAppConfig, resolveCliAppConfig } from '../../utils'
-import { resolveDevUserConfig } from './resolveDevUserConfig'
-import type { DevCommand } from './types'
-import { watchPageFiles } from './watchPageFiles'
-import { watchUserConfigFile } from './watchUserConfigFile'
+} from '../../config/index.js'
+import { resolveAppConfig, resolveCliAppConfig } from '../../utils/index.js'
+import { resolveDevUserConfig } from './resolveDevUserConfig.js'
+import type { DevCommand } from './types.js'
+import { watchPageFiles } from './watchPageFiles.js'
+import { watchUserConfigFile } from './watchUserConfigFile.js'
 
 const log = debug('vuepress:cli/dev')
 

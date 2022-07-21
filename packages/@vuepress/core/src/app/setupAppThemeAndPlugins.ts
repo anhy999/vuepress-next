@@ -1,5 +1,5 @@
-import type { App, AppConfig } from '../types'
-import { resolveThemeInfo } from './resolveThemeInfo'
+import type { App, AppConfig } from '../types/index.js'
+import { resolveThemeInfo } from './resolveThemeInfo.js'
 
 /**
  * Setup theme and plugins for vuepress app

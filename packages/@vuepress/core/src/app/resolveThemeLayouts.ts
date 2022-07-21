@@ -1,6 +1,6 @@
 import { isPlainObject } from '@vuepress/shared'
 import { chalk, fs, logger, path } from '@vuepress/utils'
-import type { ThemeObject } from '../types'
+import type { ThemeObject } from '../types/index.js'
 
 /**
  * Resolve layouts from `layouts` option

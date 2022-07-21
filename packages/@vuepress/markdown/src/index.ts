@@ -1,3 +1,3 @@
-export * from './markdown'
-export * from './plugins'
-export * from './types'
+export * from './markdown.js'
+export * from './plugins.js'
+export * from './types.js'

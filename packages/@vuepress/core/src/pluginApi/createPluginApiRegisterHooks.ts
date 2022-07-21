@@ -1,6 +1,6 @@
-import type { PluginApi } from '../types'
-import { normalizeClientConfigFileHook } from './normalizeClientConfigFileHook'
-import { normalizeReturnObjectHook } from './normalizeReturnObjectHook'
+import type { PluginApi } from '../types/index.js'
+import { normalizeClientConfigFileHook } from './normalizeClientConfigFileHook.js'
+import { normalizeReturnObjectHook } from './normalizeReturnObjectHook.js'
 
 export const createPluginApiRegisterHooks =
   (

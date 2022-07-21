@@ -1,5 +1,5 @@
 import { debug, fs } from '@vuepress/utils'
-import type { PageOptions } from '../types'
+import type { PageOptions } from '../types/index.js'
 
 const log = debug('vuepress:core/page')
 

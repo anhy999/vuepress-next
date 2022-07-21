@@ -1,7 +1,7 @@
 import { path } from '@vuepress/utils'
-import type { RuleBlock } from 'markdown-it/lib/parser_block'
-import type { ImportCodePluginOptions } from './importCodePlugin'
-import type { ImportCodeTokenMeta } from './types'
+import type { RuleBlock } from 'markdown-it/lib/parser_block.js'
+import type { ImportCodePluginOptions } from './importCodePlugin.js'
+import type { ImportCodeTokenMeta } from './types.js'
 
 // min length of the import code syntax, i.e. '@[code]()'
 const MIN_LENGTH = 9

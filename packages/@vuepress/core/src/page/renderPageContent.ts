@@ -4,7 +4,7 @@ import type {
   MarkdownLink,
   MarkdownSfcBlocks,
 } from '@vuepress/markdown'
-import type { App, PageFrontmatter, PageOptions } from '../types'
+import type { App, PageFrontmatter, PageOptions } from '../types/index.js'
 
 /**
  * Render page content and extract related info
