@@ -1,11 +1,15 @@
 name: coverage
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 on:
   push:
     branches:
       - main
     paths-ignore:
-      - 'docs/**'
+      - e2e/**
       - '**.md'
   pull_request:
     branches:
@@ -16,20 +20,17 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
 
-    env:
-      NODE_VERSION: '16'
-
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
+          node-version: lts/*
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -37,8 +38,8 @@ jobs:
       - name: Build source code
         run: pnpm build
 
-      - name: Test coverage
-        run: pnpm run test --coverage
+      - name: Unit test coverage
+        run: pnpm test:unit:cov
 
       - name: Coveralls
         uses: coverallsapp/github-action@master

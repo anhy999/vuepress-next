@@ -10,7 +10,7 @@ jobs:
     if: github.event.label.name == 'invalid'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions-cool/issues-helper@v2
+      - uses: actions-cool/issues-helper@v3
         with:
           actions: 'close-issue, create-comment'
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -22,9 +22,9 @@ jobs:
     if: github.event.label.name == 'need reproduction'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions-cool/issues-helper@v2
+      - uses: actions-cool/issues-helper@v3
         with:
           actions: 'create-comment'
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
-            Hello @${{ github.event.issue.user.login }}. Please provide a [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) using a GitHub repository or [v2.vuepress.vuejs.org/new](https://v2.vuepress.vuejs.org/new). Issues marked with `need reproduction` will be closed if they have no activity within 3 days.
+            Hello @${{ github.event.issue.user.login }}. Please provide a [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) using a GitHub repository or [vuepress.vuejs.org/new](https://vuepress.vuejs.org/new). Issues marked with `need reproduction` will be closed if they have no activity within 7 days.

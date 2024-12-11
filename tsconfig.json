@@ -2,26 +2,21 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": false,
     "jsx": "preserve",
-    "module": "ES2020",
     "paths": {
-      "@internal/searchIndex": [
-        "./packages/@vuepress/plugin-search/src/client/searchIndex"
-      ],
-      "@internal/themeData": [
-        "./packages/@vuepress/plugin-theme-data/src/client/themeData"
-      ],
-      "@internal/*": ["./packages/@vuepress/client/src/types/internal/*"],
-      "@theme/*": [
-        "./packages/@vuepress/theme-default/src/client/components/*"
-      ],
-      "@vuepress/*": ["./packages/@vuepress/*/src"],
-      "vuepress": ["./packages/vuepress/src"],
-      "vuepress-vite": ["./packages/vuepress-vite/src"],
-      "vuepress-webpack": ["./packages/vuepress-webpack/src"]
+      "@internal/*": ["./packages/client/src/types/internal/*.d.ts"],
+      "@vuepress/*": ["./packages/*/src"],
+      "vuepress": ["./packages/vuepress/src"]
     },
-    "types": ["webpack-env", "vite/client", "@types/jest"]
+    "types": ["webpack-env", "vite/client"]
   },
-  "include": ["**/.vuepress/**/*", "packages/**/*"],
+  "include": [
+    "**/.vuepress/**/*",
+    "e2e/**/*",
+    "packages/**/*",
+    "scripts/**/*",
+    "*.config.ts"
+  ],
   "exclude": ["node_modules", ".temp", "lib", "dist"]
 }
